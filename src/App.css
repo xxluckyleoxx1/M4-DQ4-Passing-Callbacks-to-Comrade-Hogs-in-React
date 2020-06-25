@@ -35,12 +35,12 @@
   position: absolute;
 }
 
-#Hamlet {
+#Sobriety {
   left: 490px;
   top: 125px;
 }
 
-#Sally {
+#Trouble {
   position: absolute;
   left: 378px;
   top: 336px;
@@ -52,13 +52,13 @@
   top: 247px;
 }
 
-#Jimmy {
+#MasterBlaster {
   position: absolute;
   left: 580px;
   top: 360px;
 }
 
-#trouble-maker {
+#galaxy-s-note {
   position: absolute;
   width: 137px;
   height: 163px;
@@ -66,7 +66,7 @@
   top: 400px;
 }
 
-#trouble-maker-exclamation {
+#galaxy-exclamation {
   position: absolute;
   height: 200px;
   width: 100px;
