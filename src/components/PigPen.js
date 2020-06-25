@@ -1,14 +1,14 @@
 import React from "react"
 import Pig from "./Pig.js"
-import GalaxySNote7 from "./GalaxySNote7.js"
+import TroubleMaker from "./TroubleMaker.js"
 import exclaim from '../assets/exclaim.mp3';
 
 
 const pigs = [
-  "Sobriety",
-  "Trouble",
+  "Hamlet",
+  "Sally",
   "Cherub",
-  "MasterBlaster"
+  "Jimmy"
 ]
 
 export default class PigPen extends React.Component {
@@ -21,15 +21,14 @@ export default class PigPen extends React.Component {
   }
 
   relax = () => {
-    const newState = {environment: 'docile'}
-    this.setState(newState)
+    this.setState({environment: 'docile'})
   }
 
   alterEnvironment = (vibe) => {
-    if (vibe === "inhospitable")
+    if (vibe === "inhospitable"){
       this.audio.play()
-    const newState = {environment: vibe}
-    this.setState(newState)
+    }
+    this.setState({environment: vibe})
   }
 
   generateSheeple = () => {
@@ -43,7 +42,7 @@ export default class PigPen extends React.Component {
     return(
       <div id="pig-pen">
         {sheeple}
-        <GalaxySNote7 environment={null} alterEnvironment={null} />
+        <TroubleMaker environment={null} alterEnvironment={null} />
       </div>
     )
   }

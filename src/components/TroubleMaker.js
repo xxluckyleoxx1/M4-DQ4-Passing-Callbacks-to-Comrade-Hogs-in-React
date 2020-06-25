@@ -4,7 +4,7 @@ import exclaim from '../assets/exclaim.mp3';
 import exclamation from "../assets/exclamation.png"
 
 
-export default class GalaxySNote7 extends React.Component {
+export default class TroubleMaker extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -30,11 +30,11 @@ export default class GalaxySNote7 extends React.Component {
     this.squeelAudio.play()
   }
 
-  panic = () => (<img id="galaxy-exclamation" className="exclamation" src={exclamation} alt="" />)
+  panic = () => (<img id="trouble-maker-exclamation" className="exclamation" src={exclamation} alt="" />)
 
   render() {
     return(
-      <div id="galaxy-s-note" onClick={this.exclaim}>
+      <div id="trouble-maker" onClick={this.exclaim}>
         {(this.state.panicked) ? this.panic() : null}
       </div>
     )
